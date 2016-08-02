@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Table-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                             <constraint firstItem="Mfk-vc-sTD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yO8-YP-qaW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3gG-65-ibf"/>
+                    <navigationItem key="navigationItem" title="Table" id="3gG-65-ibf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="tableView" destination="Mfk-vc-sTD" id="l6n-aQ-VOM"/>
@@ -154,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="852" y="1704"/>
         </scene>
-        <!--About View Controller-->
+        <!--Web View-->
         <scene sceneID="hMA-Pv-X8K">
             <objects>
                 <viewController id="3p6-Bu-W7j" customClass="AboutViewController" sceneMemberID="viewController">
@@ -167,33 +167,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czj-Ur-Xe7">
-                                <rect key="frame" x="0.0" y="144" width="320" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.94602117770000005" green="1" blue="0.63736948630000001" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rj-92-dg0">
-                                <rect key="frame" x="139" y="95" width="42" height="21"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="rMR-Nw-vgH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Czj-Ur-Xe7" firstAttribute="top" secondItem="0rj-92-dg0" secondAttribute="bottom" constant="28" id="6k4-T8-9Rf"/>
-                            <constraint firstAttribute="trailing" secondItem="Czj-Ur-Xe7" secondAttribute="trailing" id="Sm0-zw-vVB"/>
-                            <constraint firstItem="0rj-92-dg0" firstAttribute="top" secondItem="8zl-wG-4lE" secondAttribute="bottom" constant="31" id="f3c-dL-YIf"/>
-                            <constraint firstItem="Czj-Ur-Xe7" firstAttribute="leading" secondItem="Klw-DJ-0p4" secondAttribute="leading" id="v0O-Kc-66i"/>
-                            <constraint firstItem="Czj-Ur-Xe7" firstAttribute="centerX" secondItem="0rj-92-dg0" secondAttribute="centerX" id="xFS-C6-hES"/>
-                            <constraint firstItem="Czj-Ur-Xe7" firstAttribute="bottom" secondItem="1gi-ju-KyV" secondAttribute="top" id="xUl-oX-jKE"/>
+                            <constraint firstItem="Czj-Ur-Xe7" firstAttribute="leading" secondItem="Klw-DJ-0p4" secondAttribute="leading" id="MBQ-vK-FCb"/>
+                            <constraint firstAttribute="trailing" secondItem="Czj-Ur-Xe7" secondAttribute="trailing" id="U72-LF-zGa"/>
+                            <constraint firstItem="Czj-Ur-Xe7" firstAttribute="top" secondItem="Klw-DJ-0p4" secondAttribute="top" id="cYL-j9-meR"/>
+                            <constraint firstAttribute="bottom" secondItem="Czj-Ur-Xe7" secondAttribute="bottom" id="jxx-0t-xqh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="efG-MU-GIl"/>
+                    <navigationItem key="navigationItem" title="Web View" id="efG-MU-GIl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="webView" destination="Czj-Ur-Xe7" id="fQR-On-6Ys"/>
