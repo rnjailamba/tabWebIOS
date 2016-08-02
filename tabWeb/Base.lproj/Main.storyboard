@@ -33,7 +33,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="Pag-ad-Jyb" kind="push" id="aS8-jd-J89"/>
+                                            <segue destination="Pag-ad-Jyb" kind="push" identifier="showRecipeDetail" id="aS8-jd-J89"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1072" y="399"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Detail View Controller-->
         <scene sceneID="E2X-TA-ZpM">
             <objects>
-                <viewController id="Pag-ad-Jyb" sceneMemberID="viewController">
+                <viewController id="Pag-ad-Jyb" customClass="RecipeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g08-NV-zk5"/>
                         <viewControllerLayoutGuide type="bottom" id="DeB-BT-AwA"/>
@@ -70,8 +70,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBf-e9-Kze">
-                                <rect key="frame" x="139" y="273" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBf-e9-Kze">
+                                <rect key="frame" x="60" y="273" width="200" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -83,6 +83,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="uXT-xi-Bp3"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="recipeLabel" destination="wBf-e9-Kze" id="ZqK-qy-D0K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCy-5T-8Qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

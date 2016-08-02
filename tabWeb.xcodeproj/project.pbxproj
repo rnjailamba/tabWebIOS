@@ -13,6 +13,7 @@
 		639F37F41D47A6350096409D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639F37F21D47A6350096409D /* Main.storyboard */; };
 		639F37F61D47A6350096409D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639F37F51D47A6350096409D /* Assets.xcassets */; };
 		639F37F91D47A6350096409D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639F37F71D47A6350096409D /* LaunchScreen.storyboard */; };
+		63F1CC381D5028C200A1908A /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1CC371D5028C200A1908A /* RecipeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		639F37F51D47A6350096409D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639F37F81D47A6350096409D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		639F37FA1D47A6350096409D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F1CC361D5028C200A1908A /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		63F1CC371D5028C200A1908A /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				639F37F71D47A6350096409D /* LaunchScreen.storyboard */,
 				639F37FA1D47A6350096409D /* Info.plist */,
 				639F37E91D47A6350096409D /* Supporting Files */,
+				63F1CC361D5028C200A1908A /* RecipeDetailViewController.h */,
+				63F1CC371D5028C200A1908A /* RecipeDetailViewController.m */,
 			);
 			path = tabWeb;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				639F37F11D47A6350096409D /* ViewController.m in Sources */,
+				63F1CC381D5028C200A1908A /* RecipeDetailViewController.m in Sources */,
 				639F37EE1D47A6350096409D /* AppDelegate.m in Sources */,
 				639F37EB1D47A6350096409D /* main.m in Sources */,
 			);
@@ -300,6 +306,7 @@
 				639F37FF1D47A6350096409D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

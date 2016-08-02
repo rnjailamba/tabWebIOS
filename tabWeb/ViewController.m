@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RecipeDetailViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>{
     NSArray *recipes;
@@ -47,6 +48,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        RecipeDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    }
 }
 
 @end
